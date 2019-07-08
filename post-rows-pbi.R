@@ -1,7 +1,7 @@
 
 # Instala as bibliotecas necessárias para a atividade caso não estejam instaladas
 if (!all(c("tidyverse", "httr", "jsonlite") %in% installed.packages()))
-  install.packages(c("tidyverse", "httr", "jsonlite"))
+  install.packages(c("tidyverse", "httr", "jsonlite"), repos = "https://cloud.r-project.org/")
 
 # Carrega as bibliotecas no script
 library(tidyverse)
